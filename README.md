@@ -1,13 +1,13 @@
-# Silverstripe CataloguePage Module
+# Silverstripe Realm-Category Module
 
 A custom page type that either allows:
 
-Mapping of product objects (defined via config) to a CMS page
+Mapping of topics (defined via config) to a CMS page
 
 Or
 
-Mapping of multiple categories to a page in the CMS that then
-renders them (and their products) into a template.
+Mapping of multiple topic categories to a page in the CMS that then
+renders them (and their posts) into a template.
 
 The page type also includes a $PaginatedChildren variable to allow
 automatically breaking up larger product lists into smaller pages.
