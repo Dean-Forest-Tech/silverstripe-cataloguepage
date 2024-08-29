@@ -44,4 +44,8 @@ This doucument covers all notable changes and additions.
 
 ## [2.0.4]
 
+* Fix URL errors
+
+## [2.0.5]
+
 * Ensure product is set as current data record when viewing
