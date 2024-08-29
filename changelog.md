@@ -41,3 +41,7 @@ This doucument covers all notable changes and additions.
 ## [2.0.3]
 
 * Re-arrange URL segment field
+
+## [2.0.4]
+
+* Ensure product is set as current data record when viewing

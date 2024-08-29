@@ -95,11 +95,12 @@ class CataloguePageController extends PageController
             return $this->httpError(404);
         }
 
-        $this->customise(
-            [
-                'Product' => $object
-            ]
-        );
+        $this->dataRecord = $object;
+        $this->setFailover($object);
+
+        $this->customise([
+            'Product' => $object
+        ]);
 
         return $this->render();
     }
