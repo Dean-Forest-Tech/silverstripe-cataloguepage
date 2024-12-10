@@ -2,7 +2,7 @@
 Only:
   moduleexists: 'silvercommerce/catalogue-admin'
 ---
-ilateral\SilverStripe\CataloguePage\Model\CataloguePage:
+DFT\SilverStripe\CataloguePage\Model\CataloguePage:
   product_class: 'Product'
   category_class: 'Category'
 
@@ -10,5 +10,17 @@ ilateral\SilverStripe\CataloguePage\Model\CataloguePage:
 Only:
   moduleexists: 'silvercommerce/catalogue-frontend'
 ---
-ilateral\SilverStripe\CataloguePage\Model\CataloguePage:
+DFT\SilverStripe\CataloguePage\Model\CataloguePage:
   base_product_controller: 'ProductController'
+
+---
+Only:
+  moduleexists: wilr/silverstripe-googlesitemaps
+---
+SilverCommerce\CatalogueAdmin\Model\CatalgoueProduct:
+  extensions:
+    - Wilr\GoogleSitemaps\Extensions\GoogleSitemapExtension
+
+SilverCommerce\CatalogueAdmin\Model\CatalogueCategory:
+  extensions:
+    - Wilr\GoogleSitemaps\Extensions\GoogleSitemapExtension
