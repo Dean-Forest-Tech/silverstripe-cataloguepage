@@ -49,3 +49,8 @@ This doucument covers all notable changes and additions.
 ## [2.0.5]
 
 * Ensure product is set as current data record when viewing
+
+## 3.0.0
+
+* SS5 support
+* Switch to DFT namespace
