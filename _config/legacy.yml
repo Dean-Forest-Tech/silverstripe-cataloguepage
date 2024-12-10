@@ -1,0 +1,7 @@
+---
+Name: cataloguepagelegacy
+---
+SilverStripe\ORM\DatabaseAdmin:
+  classname_value_remapping:
+    CataloguePage: DFT\SilverStripe\CataloguePage\Model\CataloguePage
+    ilateral\SilverStripe\CataloguePage\Model\CataloguePage: DFT\SilverStripe\CataloguePage\Model\CataloguePage
