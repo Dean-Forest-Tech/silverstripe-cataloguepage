@@ -16,15 +16,14 @@ automatically breaking up larger product lists into smaller pages.
 
 The easiest way to install this module is via composer:
 
-    # composer require "silverstripe/cataloguepage"
+    # composer require "dft/silverstripe-cataloguepage"
     
 Otherwise install and download this module to the "cataloguepage" folder
 in your project root.
 
 ## Requirements
 
-* Silverstripe Framework 4.0 +
-* Silverstripe CMS 4.0 +
+* Silverstripe CMS 4 or 5
 
 ### Recommended
 
@@ -47,7 +46,7 @@ that you create a conntroller that can render your product.
 The easiest way to do this is to set it in your config.yml as below:
 
 ```
-ilateral\SilverStripe\CataloguePage\Model\CataloguePage:
+DFT\SilverStripe\CataloguePage\Model\CataloguePage:
   product_class: 'Product'
   category_class: 'Category'
   base_product_controller: 'ProductController'
@@ -63,19 +62,3 @@ Then add a catalogue page.
 Once the page is created, you should have "Products" and "Categories"
 tabs in the CMS, use this to add categories that will be displayed on
 this page.
-
-
-**NOTE** If you are using the [catalogue module](https://github.com/i-lateral/silverstripe-catalogue)
-then you will most likely want to disable the frontend catalogue routing
-and tempaltes. This can be done via silverstripe config:
-
-config.yml
-
-    Catalogue:
-      enable_frontend: false
-
-_config.php
-    
-    Catalogue::config()->enable_frontend = false;
-
-
