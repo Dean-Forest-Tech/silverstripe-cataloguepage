@@ -1,6 +1,6 @@
 <?php
 
-namespace ilateral\SilverStripe\CataloguePage\Model;
+namespace DFT\SilverStripe\CataloguePage\Model;
 
 use Page;
 use SilverStripe\ORM\ArrayList;

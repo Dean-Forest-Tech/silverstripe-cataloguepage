@@ -1,6 +1,6 @@
 <?php
 
-namespace ilateral\SilverStripe\CataloguePage\Extensions;
+namespace DFT\SilverStripe\CataloguePage\Extensions;
 
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Control\Director;
@@ -9,7 +9,7 @@ use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Control\Controller;
 use SilverStripe\View\Parsers\URLSegmentFilter;
 use SilverStripe\CMS\Forms\SiteTreeURLSegmentField;
-use ilateral\SilverStripe\CataloguePage\Model\CataloguePage;
+use DFT\SilverStripe\CataloguePage\Model\CataloguePage;
 
 class CataloguePageProductExtension extends DataExtension
 {

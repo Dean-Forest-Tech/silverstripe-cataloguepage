@@ -1,16 +1,14 @@
 <?php
 
-namespace ilateral\SilverStripe\CataloguePage\Model;
+namespace DFT\SilverStripe\CataloguePage\Model;
 
-use Product;
 use PageController;
 use SilverStripe\ORM\DataList;
 use SilverStripe\Core\ClassInfo;
-use SilverStripe\Control\Director;
 use SilverStripe\ORM\PaginatedList;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Injector\Injector;
-use ilateral\SilverStripe\CataloguePage\Model\CataloguePage;
+use DFT\SilverStripe\CataloguePage\Model\CataloguePage;
 
 class CataloguePageController extends PageController
 {

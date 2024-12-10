@@ -1,13 +1,10 @@
 <?php
 
-namespace ilateral\SilverStripe\CataloguePage\Tools;
+namespace DFT\SilverStripe\CataloguePage\Tools;
 
-use SilverStripe\Dev\Debug;
-use SilverStripe\Assets\File;
-use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Core\Config\Config;
-use ilateral\SilverStripe\CataloguePage\Model\CataloguePage;
-use ilateral\SilverStripe\CataloguePage\Extensions\CataloguePageProductExtension;
+use DFT\SilverStripe\CataloguePage\Model\CataloguePage;
+use DFT\SilverStripe\CataloguePage\Extensions\CataloguePageProductExtension;
 
 class CataloguePageAssociationManager
 {
