@@ -34,7 +34,10 @@ class CataloguePageController extends PageController
     
     public function PaginatedChildren($length = 12)
     {
-        return new PaginatedList($this->Children(), $this->request);
+        $list = PaginatedList::create($this->Children(), $this->request);
+        $list->setPageLength($length);
+
+        return $list;
     }
     
     public function getCompiledProducts($page_length = 30)
