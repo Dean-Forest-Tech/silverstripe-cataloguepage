@@ -5,12 +5,12 @@
             $Content
         </div>
     </article>
-    
+
     <div class="units-row line cataloguepage-products">
         <% if $CompiledProducts %>
             <div class="row line catalogue-list">
                 <% loop $CompiledProducts %>
-                    <% include ilateral\\SilverStripe\\CataloguePage\\CataloguePageProduct %>
+                    <% include DFT\\SilverStripe\\CataloguePage\\CataloguePageProduct %>
 
                     <% if $MultipleOf(3) && not $Last %></div><div class="row catalogue-list"><% end_if %>
                 <% end_loop %>
@@ -51,14 +51,14 @@
             <% loop $Categories %>
                 <% if $Up.Categories.Count > 1 %>
                     <h2>$Title</h2>
-                    
+
                     <hr />
                 <% end_if %>
                 <% if $SortedProducts.exists %>
                     <div class="units-row row line cataloguepage-products">
                         <% loop $SortedProducts %>
-                            <% include ilateral\\SilverStripe\\CataloguePage\\CataloguePageProduct %>
-                            
+                            <% include DFT\\SilverStripe\\CataloguePage\\CataloguePageProduct %>
+
                             <% if $MultipleOf(2) && not $Last %>
                                 </div><div class="units-row row line cataloguepage-products">
                             <% end_if %>
@@ -68,8 +68,8 @@
             <% end_loop %>
         <% else %>
             <% loop $SortedProducts %>
-                <% include ilateral\\SilverStripe\\CataloguePage\\CataloguePageProduct %>
-                
+                <% include DFT\\SilverStripe\\CataloguePage\\CataloguePageProduct %>
+
                 <% if $MultipleOf(2) && not $Last %>
                     </div><div class="units-row row line cataloguepage-products">
                 <% end_if %>

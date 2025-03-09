@@ -35,7 +35,7 @@ class CataloguePage extends Page
     /**
      * Config variable to define what category class we are loading by
      * default
-     *
+     * 
      * @var string
      * @config
      */
