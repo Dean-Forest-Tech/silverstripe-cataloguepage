@@ -10,8 +10,10 @@ use SilverCommerce\CatalogueAdmin\Forms\GridField\GridFieldConfig_CatalogueRelat
 
 class CataloguePage extends Page
 {
+    private static $icon_class = 'font-icon-p-shop';
+
     private static $table_name = 'CataloguePage';
-    
+
     /**
      * Config variable to define what product class we are loading by
      * default
@@ -38,11 +40,6 @@ class CataloguePage extends Page
      * @config
      */
     private static $category_class;
-
-    /**
-     * @var string
-     */
-    private static $icon = "resources/silverstripe/cataloguepage/client/dist/img/catalogue.png";
     
     /**
      * @var string
